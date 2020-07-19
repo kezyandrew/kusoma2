@@ -1,296 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+  <head>
     <title>Kusoma Online</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg" />
-    <!-- Font Awesome icons (free version)-->
-  <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
-  <script src="https://unpkg.com/scrollreveal@4"></script>
-  <script data-ad-client="ca-pub-1445043868832568" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
-    <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mynav #mainNav" id="mainNav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./assets/img/logo.jpg" width="200px" height="20px"
-                    alt="logo" class="img-responsive"></a>
+    <link rel="icon" type="image/x-icon" href="/img/logo.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
-                  
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
 
-              <!-- scroll to top -->
-            <a id="back-to-top" href="#" class="btn btn-light btn-sm back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div id="overlayer"></div>
+    <!-- <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div> -->
+
+    <div class="site-wrap" id="home-section">
+      <div class="site-mobile-menu ">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <header
+        class="site-navbar py-4 js-sticky-header site-navbar-target"
+        role="banner"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3 col-xl-4 d-block">
+              <h1 class="mb-0 site-logo">
+                <a href="index.html" class="text-black h2 mb-0"
+                  ><img
+                    src="./img/logo.jpg"
+                    alt="logo"
+                    width="200px"
+                    height="20px"
+                /></a>
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-9 col-xl-8 main-menu site-navbar-target">
+              <nav
+                class="site-navigation position-relative text-right"
+                role="navigation"
+              >
+                <ul
+                  class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0"
+                >
+                  <li><a href="#home-section" class="nav-link font-weight-bold">Home</a></li>
+                  <li>
+                    <a href="https://kusomaonline.teachable.com/courses" class="nav-link font-weight-bold">Courses</a>
+                  </li>
+                  <li>
+                    <a href="#about-section" class="nav-link font-weight-bold">About Us</a>
+                  </li>
+                  <!-- <li class="has-children">
+                  <a href="#about-section" class="nav-link">About Us</a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#" target="_blank" class="nav-link"><span class="text-primary">More Free Templates</span></a></li>
+                    <li><a href="#our-team-section" class="nav-link">Our Team</a></li>
+                    <li class="has-children">
+                      <a href="#">More Links</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul>
                     </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link" href="https://kusomaonline.teachable.com/courses">Courses</a>
-                    </li>
-                  
-                    <!-- <div class="dropdown nav-item">
-                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Start Studying
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="https://kusomaonline.teachable.com/">A-Level</a>
-                          <a class="dropdown-item" href="#">O-Level</a>
-                          <a class="dropdown-item" href="#">Primary</a>
-                          <a class="dropdown-item" href="#">Story Books</a>
-                        </div>
-                      </div>
-                     -->
-
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#about">About Us </a>
-                    </li>
-                  
+                  </ul>
+                </li>
+                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
                 </ul>
-
+              </nav>
             </div>
-        </div>
 
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead " id="intro">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold kusoma">Kusoma Online
-                    </h1>
-                    <hr class="divider my-4" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white  font-weight-bold shadow-lg mb-5 demo">A Platform Delivering Practical and Relevant
-                        Education Resources
-                    </p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger demo" href="https://kusomaonline.teachable.com/">Start Your Trial Month</a>
-                    <div class="social-buttons"> <a class="socila-item" href="https://www.facebook.com/Kusoma-Online-101561271557895/?modal=admin_todo_tour"><i class="fa fa-facebook fa-2x"></i> </a> <a class="socila-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fa fa-linkedin fa-2x"></i> </a>  <a class="socila-item" href="https://twitter.com/KusomaOnline"><i class="fa fa-twitter fa-2x"></i> </a> </div>
-                </div>
-                
+            <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0">
+              <a
+                href="#"
+                class="site-menu-toggle js-menu-toggle text-black float-right"
+                ><span class="icon-menu h3"></span
+              ></a>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <!-- Explore -->
-    <section class="page-section explore-main" id="course">
+      <div class="site-blocks-cover" style="overflow: hidden;">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mt-0 explore">Explore</h2>
-                    <hr class="divider my-4" />
-                </div>
+          <div class="row align-items-center justify-content-center">
+            <div
+              class="col-md-10"
+              style="position: relative;"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                src="./img/man-multitasking-work_23-2148390869.jpg"
+                alt="Image"
+                class="img-fluid img-absolute"
+              />
 
+              <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 mr-auto">
+                  <h1>Kusoma Online</h1>
+                  <p class="mb-5">
+                    A Platform Delivering Practical and Relevant Education
+                    Resources
+                  </p>
+                  <div>
+                    <a
+                      href="https://kusomaonline.teachable.com/"
+                      class="btn btn-danger mr-2 mb-2"
+                      >Start Your free Trial Now</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container mt-1 text-large">
-                <div class="row">
-                    <div class="col-sm-10 col-lg-6 col-md-6 mt-1">
-                        <h3 class="locally">100% Locally Relevant</h3>
-
-                        <p class="maped">
-                            1. Mapped to the national curriculum<br>
-                            2. Support for local and national examination preparation.<br>
-
-                            3.Affordable <br>
-
-                            4. <a href="" class="a-tag">Coming Soon :</a><br> Skills tracking and
-                            certification, <br>career guidance resources,<br>
-                            linkages to mentors
-                        </p>
-                        <a href="https://kusomaonline.teachable.com/" class="btn btn-outline-light btn-group-sm mt-2 mb-3 maped">Explore Subjects</a>
-
-                    </div>
-                    <div class="col-md-6 col-sm-10 col-lg-6 ml-auto local-img"> 
-                            <img src="./assets/img/23.jpg"  class="img-fluid" alt="">
-                
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <!-- Visual and interactive -->
-    <section class="page-section visual ">
-        <div class="container mt-1 text-large parallax">
-            <div class="row"> 
-                <div class="col-md-6 col-sm-10 col-lg-6 ml-auto visual-img">
-                    <img src="./assets/img/26.jpeg"  class="img-fluid" alt="">
-                
-                </div>
-                <div class="col-sm-10 col-lg-6 col-md-6 mt-1">
-                    <h3 class="visuall">Visual And Interactive</h3>
-
-                    <p class="notes">
-                        1. Text notes <br>
-                        2. 2D &amp; 3D Illustrations <br>
-                        3. Links to relevant videos <br>
-                        4. Project based learning activities <br>
-                        5. <a href="" class="a-tag">Coming soon:</a> <br>  self assessment and
-                        evaluation, recorded teacher sessions, live
-                        teacher sessions, <br> skills tracking and
-                        certifications
-                    </p>
-                    <a href="https://kusomaonline.teachable.com/" class="btn btn-outline-light btn-group-sm mt-2 mb-3 visuall">Start Your Journey</a>
-
-                </div>
-
-
-            </div>
+          </div>
         </div>
-        <!-- tech enabled learning -->
-    </section>
+      </div>
 
-    <section class="page-section tech-enabled">
-        <div class="container mt-1 text-large">
-            <div class="row">
-                <div class="col-sm-10 col-lg-6 col-md-6 mt-1 ">
-                    <h3 class="tech-h">Technology Enabled Personalized Learning</h3>
-
-                    <p class="tech-p">
-                        1. Self spaced learning.<br>
-                        2. Web based.<br>
-
-                        3.Learning Reports For Students <br>
-
-                        4. <a href="" class="a-tag-tech">Coming Soon:</a><br>app based access, offline access
-                    </p>
-                    <a href="https://kusomaonline.teachable.com/" class="btn btn-outline-dark btn-group-sm mt-2 mb-3 tech-a">Start Learning</a>
-
-                </div>
-                <div class="col-md-6 col-sm-10 col-lg-6 ml-auto local-img bg-white"> 
-                    <img src="./assets/img/24.svg"  class="img-fluid bg-white" alt="">
-        
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- available subjects-->
-
-    <section class="page-section">
-    <div class="box">
+      <div class="feature-big">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mt-0">Available Subjects</h2>
-                    <hr class="divider my-4" />
-                </div>
-
+          <div class="row mb-5 site-section">
+            <div class="col-lg-7" data-aos="fade-right">
+              <img
+                src="./img/24.svg"
+                alt="locally relevant"
+                class="img-fluid"
+              />
             </div>
-             <div class="row ">
-            
-                <div class="row justify-content-center">
-                   
+            <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+              <h2 class="text-black">100% Locally Relevant</h2>
+              <p class="mb-4">
+                1. Mapped to the national curriculum<br />
+                2. Support for local and national examination preparation.<br />
+
+                3.Affordable <br />
+
+                4. <a href="" class="a-tag">Coming Soon :</a><br />
+                Skills tracking and certification, <br />career guidance
+                resources,<br />
+                linkages to mentors
+              </p>
+              <button
+                href="https://kusomaonline.teachable.com/"
+                class="btn btn-outline-danger"
+              >
+                Explore Subjects
+              </button>
+
+              <!-- <div class="author-box" data-aos="fade-left">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img
+                      src="images/person_4.jpg"
+                      alt="Image"
+                      class="img-fluid rounded-circle"
+                    />
+                  </div>
+                  <div class="mr-auto text-black">
+                    <strong class="font-weight-bold mb-0">Grey Simpson</strong>
+                    <br />
+                    Co-Founder, XYZ Inc.
+                  </div>
                 </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                   
-                        <div class="box-part text-center econ ">
-                            
-                            
-                            <div class="title">
-                                <h4>ECONOMICS</h4>
-                            </div>
-                            
-                            
-                            <a href="https://a-level-uace.teachable.com/p/economics" class="btn btn-primary btn-xl js-scroll-trigger demo">Start</a>
+                <blockquote>
+                  &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Ducimus vitae ipsa asperiores inventore aperiam
+                  iure?&rdquo;
+                </blockquote>
+              </div> -->
+            </div>
+          </div>
 
-                            
-                         </div>
-                    </div>	 
-                    
-                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                   
-                        <div class="box-part text-center hist">
-                            
-                            <!-- <i class="fa fa-twitter fa-3x" aria-hidden="true"></i> -->
-                            <div class="title">
-                                <h4>HISTORY</h4>
-                            </div>
-                          
-                            <a href="https://a-level-uace.teachable.com/p/history" class="btn btn-primary btn-xl js-scroll-trigger demo">Start</a>
+          <div class="mt-5 row mb-5 site-section">
+            <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+              <img
+                src="./img/woman-computer-illustration_33099-601.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
+              <h2 class="text-black">Visual and Interactive</h2>
+              <p class="notes">
+                1. Text notes <br />
+                2. 2D &amp; 3D Illustrations <br />
+                3. Links to relevant videos <br />
+                4. Project based learning activities <br />
+                5. <a href="" class="a-tag">Coming soon:</a> <br />
+                self assessment and evaluation, recorded teacher sessions, live
+                teacher sessions, <br />
+                skills tracking and certifications
+              </p>
+              <button
+                href="https://kusomaonline.teachable.com/"
+                class="btn btn-outline-danger"
+              >
+                Start Your Journey
+              </button>
+            </div>
+          </div>
 
-                            
-                            
-                         </div>
-                    </div>	 
-                    
-                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                   
-                        <div class="box-part text-center ent">
-                            
-                           
-                            
-                            <div class="title">
-                                <h4>ENTREPRENUERSHIP</h4>
-                            </div>
-                           
-                            <a href="https://a-level-uace.teachable.com/p/uace-p230-entrepreneurship-education" class="btn btn-primary btn-xl js-scroll-trigger demo">Start</a>
+          <div class="row mb-5 site-section">
+            <div class="col-lg-7" data-aos="fade-right">
+              <img
+                src="img/collection-different-people-work_23-2148471654.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+              <h2 class="text-black">
+                Technology Enabled Personalized Learning
+              </h2>
+              <p class="mb-4">
+                1. Self spaced learning.<br />
+                2. Web based.<br />
 
-                            
-                            
+                3.Learning Reports For Students <br />
+
+                4. <a href="" class="a-tag-tech">Coming Soon:</a><br />app based
+                access, offline access
+              </p>
+              <button
+                href="https://kusomaonline.teachable.com/"
+                class="btn btn-outline-danger"
+              >
+                Start Learning
+              </button>
+            </div>
+          </div>
+
+         
+          <section class="page-section">
+            <div class="box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mt-0 text-black">Available Subjects</h2>
+                            <!-- <hr class="divider my-4" /> -->
                         </div>
-                    </div>	 
+        
+                    </div>
+                     <div class="row ">
                     
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                   
-                        <div class="box-part text-center geog">
-                            
+                        <div class="row justify-content-center">
                            
-                            <div class="title">
-                                <h4>GEOGRAPHY</h4>
-                            </div>
+                        </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                           
+                                <div class="box-part text-center econ ">
+                                    
+                                    
+                                    <div class="title">
+                                        <h4>ECONOMICS</h4>
+                                    </div>
+                                    
+                                    
+                                    <a href="https://a-level-uace.teachable.com/p/economics" class="btn btn-danger">Start</a>
+        
+                                    
+                                 </div>
+                            </div>	 
+                            
+                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                           
+                                <div class="box-part text-center hist">
+                                    
+                                    <!-- <i class="fa fa-twitter fa-3x" aria-hidden="true"></i> -->
+                                    <div class="title">
+                                        <h4>HISTORY</h4>
+                                    </div>
+                                  
+                                    <a href="https://a-level-uace.teachable.com/p/history" class="btn btn-danger btn-xl js-scroll-trigger demo">Start</a>
+        
+                                    
+                                    
+                                 </div>
+                            </div>	 
+                            
+                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                           
+                                <div class="box-part text-center ent">
+                                    
+                                   
+                                    
+                                    <div class="title">
+                                        <h4>ENTREPRENUERSHIP</h4>
+                                    </div>
+                                   
+                                    <a href="https://a-level-uace.teachable.com/p/uace-p230-entrepreneurship-education" class="btn btn-danger btn-xl js-scroll-trigger demo">Start</a>
+        
+                                    
+                                    
+                                </div>
+                            </div>	 
+                            
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                           
+                                <div class="box-part text-center geog">
+                                    
+                                   
+                                    <div class="title">
+                                        <h4>GEOGRAPHY</h4>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <a href="https://a-level-uace.teachable.com/p/uace-p250-1-physical-geography" class="btn btn-danger btn-xl js-scroll-trigger demo">Start</a>
+        
+                                    
+                                    
+                                 </div>
+                            </div>	 
+                            
+                             
                             
                             
-                            
-                            <a href="https://a-level-uace.teachable.com/p/uace-p250-1-physical-geography" class="btn btn-primary btn-xl js-scroll-trigger demo">Start</a>
+                    
+                    </div>		
+                </div>
+            </div>
+        </section>
 
-                            
-                            
-                         </div>
-                    </div>	 
-                    
-                     
-                    
-                    
-            
-            </div>		
+
+      <div class="site-section bg-light" id="about-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title mb-3">About Us</h2>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+              <img
+                src="./img/about.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-5 ml-auto pl-lg-5">
+              <!-- <h2 class="text-black mb-4 h3 font-weight-bold">Our Mission</h2> -->
+              <h5 class="text-black font-weight-bold">Purpose:</h5>
+              <p class="card-text soon ">
+                 Contributing to dignified development of our communities.
+              </p>
+              <h5 class="text-black font-weight-bold">Mission:</h5>
+              <p class="card-text soon">Deliver a practical and relevant online educating to learners in Africa.</p>
+          
+              <h5 class="text-black font-weight-bold">vision:</h5>
+              <p class="card-text soon">An Africa where all learners have access to great education.</p>
+         <h5 class="text-black font-weight-bold">Values:</h5>
+         <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fa fa-check"></i></span> <h6 class="text-black">PRAXIS:</h6> We believe in learning coupled with reflection and action to improve education outcomes </li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><h6 class="text-black">Culture of discipline:</h6>  We are a team of disciplined people, with disciplined thought and disciplined action.</li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span> <h6 class="text-black">Leadership:</h6> We positively influence the world around us and are constantly building a better future
+          </li>
+         
+      </ul>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
 
-    <!-- students teachers need us -->
-    <section class="page-section ">
+
+
+      <section class="page-section ">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
-                            <h2 class="mt-0">Students,Teachers and Parents Need Us</h2>
-                            <hr class="divider my-4" />
+                            <h2 class=" text-black">Students,Teachers and Parents Need Us</h2>
+                            <!-- <hr class="divider my-4" /> -->
                         </div>
 
                     </div>
@@ -313,7 +428,7 @@
                                             </div>
                                             <div class="media">
                                                 <div class="media-left d-flex mr-3">
-                                                    <img src="./assets/img/13.jpg" alt="">
+                                                    <img src="./img/21.jpg" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="overview">
@@ -346,7 +461,7 @@
                                                 I recommend it.</div>
                                             <div class="media">
                                                 <div class="media-left d-flex mr-3">
-                                                    <img src="./assets/img/12.jpg" alt="">
+                                                    <img src="./img/22.jpg" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="overview">
@@ -385,7 +500,7 @@
                                             </div>
                                             <div class="media">
                                                 <div class="media-left d-flex mr-3">
-                                                    <img src="./assets/img/1.jpg" alt="">
+                                                    <img src="./img/23.jpg" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="overview">
@@ -418,7 +533,7 @@
                                                 I recommend it and practical</div>
                                             <div class="media">
                                                 <div class="media-left d-flex mr-3">
-                                                    <img src="./assets/img/20.jpg" alt="">
+                                                    <img src="./img/27.jpg" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="overview">
@@ -453,439 +568,168 @@
     </section>
 
 
-    <!-- Choose your study plan -->
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="mt-0 soon-h">Choose Your Plan</h2>
-                <hr class="divider my-4" />
-            </div>
-
-        </div>
-    </div>
-    <section class="pricing py-5 page-section">
-
+      <div class="site-section" id="our-team-section">
         <div class="container">
-
-            <div class="row">
-                <!-- Free Tier -->
-                <div class="col-lg-4 soon">
-                    <div class="card mb-5 mb-lg-0 ">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
-                            <h6 class="card-price text-center">3,500UGX<span class="period">/Basic</span></h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Quality Text Notes</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Diagrams and Illustrations</li>
-                                
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Sample UNEB past papers</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Free For 1 month</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Engaging Video Lessons</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Full Color Diagrams and Illustrations</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Sample Test Answers and Marking Guides</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Study Skills and Examination Guides</li>
-                                <!-- <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Practical Experiments</li> -->
-                                <!-- <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Career Guidance and Counseling Resources</li> -->
-                            </ul>
-                            <a href="https://kusomaonline.teachable.com/"
-                                class="btn btn-block btn-primary btn-xl js-scroll-trigger text-uppercase">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Plus Tier -->
-                <div class="col-lg-4 soon">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Standard</h5>
-                            <h6 class="card-price text-center">Coming Soon<span class="period">/Standard</span></h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Everything in Basic</strong></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Engaging video Lessons</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Full color Diagrams and Illustrations
-                                </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Sample Test answers and Marking Guides</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Study Skills and Examination Guides
-                                </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Practical Experiments</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Career Guidence and counselling Resources</li>
-                                <!-- <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Monthly
-                                    Status Reports</li> -->
-                            </ul>
-                            <!-- <a href="#"
-                                class="btn btn-primary btn-block btn-xl js-scroll-trigger text-uppercase">Buy</a> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Pro Tier -->
-                <div class="col-lg-4 soon">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
-                            <h6 class="card-price text-center">Coming Soon<span class="period">/Premium</span></h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Everything in Standard</strong></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Live Interactive Classes From The Best Teachers
-                                </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Virtual Experiments</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Project Based Learning
-                                </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Text Books For Rent</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Career Guidence and Counseling Guest Speakers</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Learning Projects For Students</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Customized School Plan Options</li>
-                                <!-- <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Monthly
-                                    Status Reports</li> -->
-                            </ul>
-                            <!-- <a href="#"
-                                class="btn btn-primary btn-block btn-xl js-scroll-trigger text-uppercase">Buy</a> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 soon">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Annual</h5>
-                            <h6 class="card-price text-center">1,095,000 UGX<span class="period">/Annually</span></h6>
-                            <hr> -->
-                            <!-- <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Everything in Standard</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Live interactive Classes</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Virtual Experiments
-                                </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>project Based Learning</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Unlimited
-                                    Private Projects</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Dedicated
-                                    Phone Support</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Free
-                                    Subdomain</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Monthly
-                                    Status Reports</li>
-                            </ul> -->
-                            <!-- <a href="#"
-                                class="btn btn-block btn-primary btn-xl js-scroll-trigger text-uppercase">Button</a>
-                        </div>
-                    </div>
-                </div> -->
-
-            </div>
-        </div>
-    </section>
-
-    <!-- about us -->
-
-    <section class="page-section" id="about">
-        <div class="container py-3 ">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mt-0 soon-h">About Us</h2>
-                    <hr class="divider my-4" />
-                </div>
-
-            </div>
-            <!-- Card Start -->
-            <div class="card about">
-                <div class="row ">
-
-                    <div class="col-md-7 px-3">
-                        <div class="card-block px-6">
-                            <h4 class="card-title explore"></h4>
-                            <h5>Purpose:</h5>
-                            <p class="card-text soon">
-                               Contributing to dignified development of our communities.
-                            </p>
-                            <h5>Mission:</h5>
-                            <p class="card-text soon">Deliver a practical and relevant online educating to learners in Africa.</p>
-                        
-                            <h5>vision:</h5>
-                            <p class="card-text soon">An Africa where all learners have access to great education.</p>
-                       <h5>Values:</h5>
-                       <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa fa-check"></i></span> <h6>PRAXIS:</h6> We believe in learning coupled with reflection and action to improve education outcomes </li>
-                        <li><span class="fa-li"><i class="fa fa-check"></i></span><h6>Culture of discipline:</h6>  We are a team of disciplined people, with disciplined thought and disciplined action.</li>
-                        <li><span class="fa-li"><i class="fa fa-check"></i></span> <h6>Leadership:</h6> We positively influence the world around us and are constantly building a better future
-                        </li>
-                       
-                    </ul>
-                        </div>
-                    </div>
-                    <!-- Carousel start -->
-                    <div class="col-md-5 px-3">
-                        <div id="CarouselTest" class="carousel slide" data-ride="carousel" >
-
-                            <div class="carousel-inner col-12">
-                                <div class="carousel-item active">
-                                    <img class="d-block" src="./assets/img/16.jpg" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block" src="./assets/img/20.jpg" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block" src="./assets/img/21.jpg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of carousel -->
-                </div>
-            </div>
-    </section>
-
-
-
-    <!-- team section -->
-
-    <section id="team" class="pb-5 page-section team">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mt-0 soon-h">Team</h2>
-                    <hr class="divider my-4" />
-                </div>
-
-            </div>
-            <div class="row">
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4 soon">
-                    <div class="image-flip">
-                        <div class="mainflip flip-0">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid"
-                                                src="./assets/img/team/james.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">James Katumba</h4>
-                                        <h6>Team Lead</h6>
-                                        <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.facebook.com/jkatumbas">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/KatumbaJS">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/katumbajs">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4 soon">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid"
-                                                src="./assets/img/team/papzo.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Ssenyonjo Andrew</h4>
-                                        <h6>Technical Associate</h6>
-                                       <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.facebook.com/ssenyonjo.andrew.3">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/senyonjoandy">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/andrew-ssenyonjo-3b21b8b3/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4 soon">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid"
-                                                src="/assets/img/team/lukoma.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Lukoma Ronald</h4>
-
-                                        <h6>Technical Associate</h6>
-                                      <ul class="list-inline mt-4">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.facebook.com/ronald.lukoma">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/C_Lukoma">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/lukoma-ronald-b490761a6/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4 soon">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid"
-                                                src="./assets/img/team/lwanga.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Ssali Lwanga</h4>
-                                        <h6>Technical Associate</h6>
-                                        <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.facebook.com/ssalifab">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/ssalifab">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/ssalifab">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                           
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4 soon">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid"
-                                                src="./assets/img/team/Kaweesa.JPG"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Kaweesa Andrew</h4>
-                                        <h6>Technical Associate</h6>
-                                      <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.facebook.com/andrew.kaweesa.7">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/AndrewKezy">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/andrew-kezy-05892b178/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
+          <div
+            class="row mb-5 justify-content-center text-center"
+            data-aos="fade-up"
+          >
+            <div class="col-7 text-center mb-5">
+              <h2 class="section-title">Our Team</h2>
+              <p class="lead">
                
-                <!-- ./Team member -->
-
+              </p>
             </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="person">
+                <div class="bio-img">
+                  <figure>
+                    <img
+                      src="./img/team/james.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="social">
+                    <a href="https://www.facebook.com/jkatumbas"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/KatumbaJS"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/katumbajs"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <h2 class="text-black h1">James Katumba</h2>
+                <span class="sub-title d-block mb-3">Team Lead</span>
+                
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="person">
+                <div class="bio-img">
+                  <figure>
+                    <img
+                      src="img/team/papzo.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="social">
+                    <a href="https://www.facebook.com/ssenyonjo.andrew.3"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/senyonjoandy"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/andrew-ssenyonjo-3b21b8b3/"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <h2 class="text-black h1">Andrew Ssenyonjo</h2>
+                <span class="sub-title d-block mb-3">Technical Associate</span>
+              
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="person">
+                <div class="bio-img">
+                  <figure>
+                    <img
+                      src="img/team/lukoma.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="social">
+                    <a href="https://www.facebook.com/ronald.lukoma"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/C_Lukoma"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/lukoma-ronald-b490761a6/"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <h2 class="text-black h1">Lukoma Ronald</h2>
+                <span class="sub-title d-block mb-3">Technical Associate</span>
+                
+            
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+              <div class="person">
+                <div class="bio-img">
+                  <figure>
+                    <img
+                      src="img/team/lwanga.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="social">
+                    <a href="https://www.facebook.com/ssalifab"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/ssalifab"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/ssalifab"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <h2 class="text-black h1">Ssali Lwanga</h2>
+                <span class="sub-title d-block mb-3">Technical Associate</span>
+               
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="person">
+                <div class="bio-img">
+                  <figure>
+                    <img
+                      src="img/team/Kaweesa.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="social">
+                    <a href="https://www.facebook.com/andrew.kaweesa.7"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/AndrewKezy"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/andrew-kezy-05892b178/"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <h2 class="text-black h1">Andrew Kaweesa</h2>
+                <span class="sub-title d-block mb-3">Technical Associate</span>
+               
+              </div>
+            </div>
+
+            
         </div>
-    </section>
-    <!-- Team -->
-
-
-
-
-    <!-- Contact-->
-    <section class="page-section" id="contact">
+      </div>
+      <section class="page-section" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mt-0 explore">Let's Get In Touch!</h2>
-                    <hr class="divider my-4" />
+                    <h2 class="mt-0 explore text-black">Let's Get In Touch!</h2>
+                    <!-- <hr class="divider my-4" /> -->
                     <p class="text-muted mb-5">Ready to start your quality online study with us? </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0 locally">
-                    <i class="fa fa-phone fa-3x mb-3 text-muted"></i>
+                    <i class="fa fa-phone fa-3x mb-3 "></i>
                     <div>+(256)-772-093578</div>
                 </div>
                 <div class="col-lg-3 mr-auto text-center">
-                    <i class="fa fa-envelope fa-3x mb-3 text-muted maped"></i>
+                    <i class="fa fa-envelope fa-3x mb-3 "></i>
                     <!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a
                         class="d-block" href="kusomaonline@gmail.com">kusomaonline@gmail.com</a>
              
@@ -904,37 +748,24 @@
             <div class="small text-center text-muted">Copyright &copy; 2020 - Kusoma Online</div>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script> -->
-   <script>
-       ScrollReveal().reveal('.nav-link',{duration:1500,interval:250})
-       ScrollReveal().reveal('.navbar-brand',{duration:2000})
-       ScrollReveal().reveal('.kusoma',{duration:2000})
-       ScrollReveal().reveal('.demo',{duration:1000})
-       ScrollReveal().reveal('.demo',{duration:1000,interval:330})
-       ScrollReveal().reveal('.socila-item',{duration:2000,interval:300})
-       ScrollReveal().reveal('.explore',{duration:3000})
-       ScrollReveal().reveal('.locally',{duration:4000})
-       ScrollReveal().reveal('.maped',{duration:5000})
-       ScrollReveal().reveal('.visuall',{duration:2000})
-       ScrollReveal().reveal('.notes',{duration:3000})
-       ScrollReveal().reveal('.visual-img',{duration:2000})
-       ScrollReveal().reveal('.local-img',{duration:2000})
-       ScrollReveal().reveal('.tech-h',{duration:3000})
-       ScrollReveal().reveal('.tech-p',{duration:4000})
-       ScrollReveal().reveal('.tech-a',{duration:4000})
-       ScrollReveal().reveal('.tech-img',{duration:3000})
-       ScrollReveal().reveal('.soon-h',{duration:2000})
-       ScrollReveal().reveal('.soon',{duration:5000,interval:300})
-       
-   </script> 
-</body>
+     
+     
 
+      
+    <!-- .site-wrap -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
